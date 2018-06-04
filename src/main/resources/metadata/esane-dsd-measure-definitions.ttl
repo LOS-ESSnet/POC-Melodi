@@ -1,0 +1,1611 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix qb:    <http://purl.org/linked-data/cube#> .
+@prefix sdmx-measure: <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix icon: <http://id.insee.fr/meta/concept/> .
+@prefix imes: <http://id.insee.fr/meta/mesure/> .
+
+###################################################################
+#               Data Structure Definition for Esane               #
+#                       (measure definitions)                     #
+###################################################################
+
+imes:actcatvalene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Chiffre d'affaires HT"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:actcatvalene .
+
+imes:actentnomens
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Nombre d'entreprises"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:actentnomens .
+
+imes:aim211valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Augmentations par réévaluation des terrains "@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:aim211valene .
+
+imes:aim215valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Augmentations par réévaluation des installations techniques, matériel et outillage industriel "@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:aim215valene .
+
+imes:aim221valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Augmentations par acquisitions, créations, apports virements poste à poste terrains"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:aim221valene .
+
+imes:aimc120vaene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total augmentations par acquisitions, créations apports, virements poste à poste immo. corporelles"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:aimc120vaene .
+
+imes:aimc216vaene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Augmentations par réévaluation des installations générales, agencements, aménagements divers "@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:aimc216vaene .
+
+imes:aimc217vaene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Augmentations par réévaluation du matériel de transport "@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:aimc217vaene .
+
+imes:aimc312vaene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Augmentations par réévaluations des constructions"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:aimc312vaene .
+
+imes:aimc315vaene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Augmentation par réévaluation des autres immobilisations corporelles"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:aimc315vaene .
+
+imes:aimf121vaene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total augmentations par acquisitions, créations, apports, virements de poste à poste immo. financières"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:aimf121vaene .
+
+imes:aimi115vaene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Augmentation par réévaluation immobilisations incorporelles"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:aimi115vaene .
+
+imes:aimi125vaene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Augmentation par acquisitions, créations, apports, virements de poste à poste immo. incorporelles"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:aimi125vaene .
+
+imes:aimt119vaene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total des augmentations par réévaluation des immobilisations"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:aimt119vaene .
+
+imes:aimt129vaene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total augmentations par acquisitions, créations, apports, virements de poste à poste"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:aimt129vaene .
+
+imes:bac100valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total amortissements sur immobilisations amortissables fin d' exercice"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac100valene .
+
+imes:bac102valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total de l'actif immobilisé"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac102valene .
+
+imes:bac103valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total de l'actif circulant y compris charges constatées d'avance"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac103valene .
+
+imes:bac104valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Autres comptes de régularisation"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac104valene .
+
+imes:bac114valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Fonds commercial"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac114valene .
+
+imes:bac117valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total des immobilisations incorporelles brutes, autres que le fonds commercial"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac117valene .
+
+imes:bac121valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Immobilisations corporelles : terrains"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac121valene .
+
+imes:bac122valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Immobilisations corporelles : constructions"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac122valene .
+
+imes:bac123valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Immobilisations corporelles : installations techniques, matériel et outillage industriels"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac123valene .
+
+imes:bac124valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Autres immobilisations corporelles"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac124valene .
+
+imes:bac125valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Immobilisations corporelles en cours"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac125valene .
+
+imes:bac126valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Immobilisations corporelles : avances et acomptes"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac126valene .
+
+imes:bac130valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total amortissements immobilisations corporelles fin de l'exercice"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac130valene .
+
+imes:bac141valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Immobilisations financières : autres participations"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac141valene .
+
+imes:bac143valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Immobilisations financières : autres titres immobilisés"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac143valene .
+
+imes:bac147valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Immobilisations financières : participations évaluées suivant méthode mise en équivalence"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac147valene .
+
+imes:bac148valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Créances rattachées à participations + prêts + autres immobilisations financières"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac148valene .
+
+imes:bac152valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Stocks : matières premières, approvisionnements"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac152valene .
+
+imes:bac153valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Stocks : en-cours de production de biens "@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac153valene .
+
+imes:bac154valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Stocks : en-cours de production de services"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac154valene .
+
+imes:bac155valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Stocks : produits intermédiaires et finis"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac155valene .
+
+imes:bac156valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Stocks : marchandises"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac156valene .
+
+imes:bac171valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Avances et accomptes versés sur commandes"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac171valene .
+
+imes:bac172valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Créances : clients et comptes rattachés"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac172valene .
+
+imes:bac173valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Autres créances"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac173valene .
+
+imes:bac181valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Valeurs mobilières de placement"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac181valene .
+
+imes:bac182valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Disponibilités"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac182valene .
+
+imes:bac190valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Charges constatées d'avance"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac190valene .
+
+imes:bac200valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total des diminutions des amortissements des immobilisations"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac200valene .
+
+imes:bac202valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total des amortissements et provisions de l'actif immobilisé"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac202valene .
+
+imes:bac203valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total des amortissements et provisions de l' actif circulant (+ charges constatées d'avance)"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac203valene .
+
+imes:bac210valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Amortissements et provisions pour dépréciations sur immobilisations incorporelles"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac210valene .
+
+imes:bac214217ene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Immobilisations incorporelles amortissements et provisions pour dépréciations "@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac214217ene .
+
+imes:bac214valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Amortissements et provisions sur fonds commercial"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac214valene .
+
+imes:bac217valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total amortissements, dépréciations immobilisations incorporelles, autres que fonds commercial"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac217valene .
+
+imes:bac220valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Immobilisations corporelles (amortissements)"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac220valene .
+
+imes:bac221valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Amortissements et provisions sur immobilisations corporelles : terrains"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac221valene .
+
+imes:bac222valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Amortissements et provisions sur immobilisations corporelles : constructions"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac222valene .
+
+imes:bac223valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Amortissements pour dépréciations sur installations techniques, matériel outillage industriels"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac223valene .
+
+imes:bac224valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Amortissements et provisions sur autres immobilisations corporelles"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac224valene .
+
+imes:bac225valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Amortissements provisions sur immobilisations corporelles : immobilisations en cours"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac225valene .
+
+imes:bac226valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Amortissements et provisions sur immobilisations corporelles : avances et acomptes"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac226valene .
+
+imes:bac230valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total diminutions amortissements sur immobilisations corporelles amortissables"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac230valene .
+
+imes:bac240valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Immobilisations financières (amortissements)"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac240valene .
+
+imes:bac241valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Provisions pour dépréciations sur immobilisations financières : autres participations"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac241valene .
+
+imes:bac243valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          " Provisions pour dépréciations des autres titres immobilisés"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac243valene .
+
+imes:bac247valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Provisions pour dépréciations participations évaluées suivant méthode mise en équivalence"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac247valene .
+
+imes:bac248valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Provisions pour dépréciations créances rattachées à participations + prêts + autres immo. financières"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac248valene .
+
+imes:bac252valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "¨Provisions pour dépréciations de stocks de matières premières et approvisionnements"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac252valene .
+
+imes:bac253valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Provisions pour dépréciations des en cours de production de biens"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac253valene .
+
+imes:bac254valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Provisions pour dépréciation des en-cours de production de services"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac254valene .
+
+imes:bac255valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Provisions pour dépréciation des stocks de produits intermédiaires et finis"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac255valene .
+
+imes:bac256valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Provisions sur stocks : marchandises"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac256valene .
+
+imes:bac272valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Provisions sur créances clients et comptes rattachés"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac272valene .
+
+imes:bac273valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Provisions sur autres créances"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac273valene .
+
+imes:bac281valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Provisions sur valeurs mobilières de placement (dont actions propres)"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac281valene .
+
+imes:bac282valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Provisions sur disponibilités"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac282valene .
+
+imes:bac290valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Provisions sur charges constatées d'avance, autres comptes de régularisation"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac290valene .
+
+imes:bac300valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total des augmentations des amortissements sur immobilisations"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac300valene .
+
+imes:bac314315ene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Autres produits d'exploitation, reprises sur amortissements, provisions, transferts de charges)"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac314315ene .
+
+imes:bac330valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total des augmentations des amortissements des immobilisations corporelles "@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac330valene .
+
+imes:bac400valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total amortissements sur immobilisations amortissables début d' exercice"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac400valene .
+
+imes:bac430valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total des amortissements sur immobilisations corporelles début d' exercice"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac430valene .
+
+imes:bac604valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Affectations : dividendes"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bac604valene .
+
+imes:bacstomppene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Stocks (matières premières, en-cours de production, approvisionnements, produits intermédiaires, finis)"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bacstomppene .
+
+imes:bpa100valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Résultat de l'exercice (bénéfice ou perte)"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bpa100valene .
+
+imes:bpa300valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total passif"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bpa300valene .
+
+imes:bpa301valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Capitaux propres"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bpa301valene .
+
+imes:bpa302valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Autres fonds propres"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bpa302valene .
+
+imes:bpa303valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Provisions pour risques et charges"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bpa303valene .
+
+imes:bpa304valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Dettes et produits constatés d'avance"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bpa304valene .
+
+imes:bpa311valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Capital social, individuel et primes d'émission"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bpa311valene .
+
+imes:bpa313valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Ecarts de révaluation"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bpa313valene .
+
+imes:bpa314valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Réserves légales"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bpa314valene .
+
+imes:bpa318valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Report à nouveau"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bpa318valene .
+
+imes:bpa320valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Subventions d'investissement"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bpa320valene .
+
+imes:bpa321valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Provisions réglementées"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bpa321valene .
+
+imes:bpa330valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Emprunts et dettes assimilées"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bpa330valene .
+
+imes:bpa341valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Avances et acomptes reçus sur commandes en cours"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bpa341valene .
+
+imes:bpa342valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Dettes fournissseurs et comptes rattachés"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bpa342valene .
+
+imes:bpa345valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Autres dettes"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bpa345valene .
+
+imes:bpa350valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Produits constatés d'avance autres comptes de régularisation"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:bpa350valene .
+
+imes:depbaivalene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Redevances de crédit-bail"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:depbaivalene .
+
+imes:dim231valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Diminution par virements de poste à poste des terrains"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:dim231valene .
+
+imes:dim241valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Diminutions par cession à des tiers ou mises hors service des terrains"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:dim241valene .
+
+imes:dimc130vaene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total diminutions par virements de poste à poste des immobilisations corporelles"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:dimc130vaene .
+
+imes:dimc140vaene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total diminutions immobilisations corporelles par cessions, mises hors services ou une mise en équivalence"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:dimc140vaene .
+
+imes:dimf131vaene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total diminutions par virements de poste à poste des immobilisations financières "@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:dimf131vaene .
+
+imes:dimf141vaene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total diminutions immobilisations financières résultant d’une mise en équivalence"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:dimf141vaene .
+
+imes:dimi135vaene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Diminution par virements poste à poste immobilisations incorporelles au cours de l’exercice"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:dimi135vaene .
+
+imes:dimi145vaene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Diminution par cession à tiers ou mises hors service immobilisations incorporelles"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:dimi145vaene .
+
+imes:dimt139vaene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total des diminution par virements de poste à poste des immobilisations"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:dimt139vaene .
+
+imes:dimt149vaene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total diminutions suite cessions à tiers, mises HS ou résultant mise en équivalence"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:dimt149vaene .
+
+imes:empsalnomens
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Effectif salarié au 31/12"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:empsalnomens .
+
+imes:eseqtpnomens
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Effectif salarié en équivalent temps plein"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:eseqtpnomens .
+
+imes:imc100valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total des immobilisations corporelles, au début de l’exercice"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:imc100valene .
+
+imes:imc110valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total des augmentations par réévaluation des immobilisations corporelles"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:imc110valene .
+
+imes:imc150valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total des immobilisations corporelles (valeur brute en fin d’exercice)"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:imc150valene .
+
+imes:imc201valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Immobilisations corporelles : terrains, au début de l’exercice"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:imc201valene .
+
+imes:imc251valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Immobilisations corporelles : terrains (valeur brute en fin d’exercice)"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:imc251valene .
+
+imes:imf101valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total des immobilisations financières, au début de l’exercice"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:imf101valene .
+
+imes:imf111valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total augmentations par réévaluation immobilisations financières ou résultant d’une mise en équivalence"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:imf111valene .
+
+imes:imf151valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total des immobilisations financières (valeur brute en fin d’exercice)"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:imf151valene .
+
+imes:imi105valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total des immobilisations incorporelles, au début de l'exercice"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:imi105valene .
+
+imes:imi155valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total des immobilisations incorporelles, à la fin l’exercice"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:imi155valene .
+
+imes:imocorvalene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Immobilisations corporelles"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:imocorvalene .
+
+imes:imofinvalene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Immobilisations financières"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:imofinvalene .
+
+imes:imoincvalene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Immobilisations incorporelles"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:imoincvalene .
+
+imes:imt109valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total des immobilisations, au début de l’exercice"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:imt109valene .
+
+imes:imt159valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total général des immobilisations (valeur brute en fin d' exercice)"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:imt159valene .
+
+imes:invbaivalene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Engagement de crédit-bail"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:invbaivalene .
+
+imes:invtotvalene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Investissement total hors apport net d'amortissements"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:invtotvalene .
+
+imes:ragauttauenp
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Marge d'autofinancement"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:ragauttauenp .
+
+imes:ragcaevalene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Chiffre d'affaires/Effectif salarié"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:ragcaevalene .
+
+imes:ragcapvalene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Intensité capitalistique"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:ragcapvalene .
+
+imes:ragcoutauenp
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Taux de couverture des valeurs immobilisées"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:ragcoutauenp .
+
+imes:ragdeftauenp
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Levier financier"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:ragdeftauenp .
+
+imes:ragdettauenp
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Taux d'endettement"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:ragdettauenp .
+
+imes:ragevatauenp
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Frais de personnel/Valeur ajoutée"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:ragevatauenp .
+
+imes:ragimotauenp
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Rentabilité brute des immobilisations corporelles"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:ragimotauenp .
+
+imes:raginttauenp
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Taux d'intérêt apparent"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:raginttauenp .
+
+imes:raginvtauenp
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Taux d'investissement"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:raginvtauenp .
+
+imes:ragmartauenp
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Taux de marge brute"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:ragmartauenp .
+
+imes:ragpacvalenj
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Délais de paiement des clients"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:ragpacvalenj .
+
+imes:ragpafvalenj
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Délais de paiment des fournisseurs"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:ragpafvalenj .
+
+imes:ragpretauenp
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Taux de prélèvement financier"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:ragpretauenp .
+
+imes:ragrentauenp
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Rentabilité globale"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:ragrentauenp .
+
+imes:ragrsttauenp
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Capacité de remboursement"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:ragrsttauenp .
+
+imes:ragtvatauenp
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Taux de valeur ajoutée"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:ragtvatauenp .
+
+imes:ragvaevalene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Valeur ajoutée/Effectif salarié en ETP"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:ragvaevalene .
+
+imes:recaidbrarde
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Dépenses de R&D financées par l'Etat (branche)"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:recaidbrarde .
+
+imes:recaidsecrde
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Dépenses de R&D financées par l'Etat (secteur)"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:recaidsecrde .
+
+imes:recappbrardp
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Part des dépenses intérieures de R&D pour la recherche appliquée (branche)"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:recappbrardp .
+
+imes:recappsecrdp
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Part des dépenses intérieures de R&D pour la recherche appliquée (secteur)"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:recappsecrdp .
+
+imes:reccatbrarde
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Chiffre d'affaires de la branche"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:reccatbrarde .
+
+imes:reccatsecrde
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Chiffre d'affaires du secteur"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:reccatsecrde .
+
+imes:recdevbrardp
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Part des dépenses intérieures de R&D pour le développement (branche)"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:recdevbrardp .
+
+imes:recdevsecrdp
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Part des dépenses intérieures de R&D pour le développement (secteur)"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:recdevsecrdp .
+
+imes:recdpebrarde
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Dépenses extérieures de la branche"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:recdpebrarde .
+
+imes:recdpesecrde
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Dépenses extérieures du secteur"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:recdpesecrde .
+
+imes:recdpibrarde
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Dépenses totales intérieures de R&D (branche)"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:recdpibrarde .
+
+imes:recdpisecrde
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Dépenses totales intérieures de R&D (secteur)"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:recdpisecrde .
+
+imes:recefrbrards
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Effectif de la branche affecté à la R&D"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:recefrbrards .
+
+imes:recefrsecrds
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Effectif du secteur affecté à la R&D"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:recefrsecrds .
+
+imes:receftbrards
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Effectif total de la branche au 31/12"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:receftbrards .
+
+imes:receftsecrds
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Effectif total du secteur au 31/12"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:receftsecrds .
+
+imes:recentbrards
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Nombre d'entreprises de la branche"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:recentbrards .
+
+imes:recentsecrds
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Nombre d'entreprises du secteur"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:recentsecrds .
+
+imes:recfonbrardp
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Part des dépenses intérieures de R&D pour la recherche fondamentale (branche)"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:recfonbrardp .
+
+imes:recfonsecrdp
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Part des dépenses intérieures de R&D pour la recherche fondamentale (secteur)"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:recfonsecrdp .
+
+imes:recingbrards
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Nombre de chercheurs de la branche"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:recingbrards .
+
+imes:recingsecrds
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Nombre de chercheurs du secteur"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:recingsecrds .
+
+imes:res100valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Bénéfice ou perte"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res100valene .
+
+imes:res101valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Résultat d’exploitation"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res101valene .
+
+imes:res102valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Résultat financier"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res102valene .
+
+imes:res103valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Résultat courant avant impôt"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res103valene .
+
+imes:res104valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Résultat exceptionnel"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res104valene .
+
+imes:res201valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total des charges d’exploitation"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res201valene .
+
+imes:res202valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Opérations en commun : perte supportée ou bénéfice transféré"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res202valene .
+
+imes:res203valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total des charges financières"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res203valene .
+
+imes:res204valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total des charges exceptionnelles"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res204valene .
+
+imes:res205valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Participation des salariés au résultat de l’entreprise"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res205valene .
+
+imes:res206valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Impôts sur les bénéfices"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res206valene .
+
+imes:res210valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Charges d’exploitation : achats de marchandises"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res210valene .
+
+imes:res211valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Charges d’exploitation : variations de stocks de marchandises"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res211valene .
+
+imes:res212valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Charges d'exploitation : achats de matières premières, autres approvisionnements "@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res212valene .
+
+imes:res213valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Charges d’exploitation : variations de stocks (matières premières et approvisionnements)"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res213valene .
+
+imes:res214valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Charges d’exploitation : autres achats et charges externes"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res214valene .
+
+imes:res215valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Charges d’exploitation : impôts, taxes, versements assimilés"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res215valene .
+
+imes:res216217ene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Frais de personnel"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res216217ene .
+
+imes:res216valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Charges d’exploitation : salaires et traitements"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res216valene .
+
+imes:res217valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Charges d’exploitation : charges sociales"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res217valene .
+
+imes:res218valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Charges d’exploitation : dotations aux amortissements sur immobilisations"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res218valene .
+
+imes:res219valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Dotations aux provisions"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res219valene .
+
+imes:res222valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Autres charges d’exploitation"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res222valene .
+
+imes:res231valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Charges financières : intérêts et charges assimilées"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res231valene .
+
+imes:res241valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Charges exceptionnelles sur opérations en capital"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res241valene .
+
+imes:res301valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total des produits d’exploitation"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res301valene .
+
+imes:res302valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Opérations en commun : bénéfice attribué ou perte transférée"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res302valene .
+
+imes:res303valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total des produits financiers"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res303valene .
+
+imes:res304valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total des produits exceptionnels"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res304valene .
+
+imes:res311valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Produits d’exploitation : production stockée"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res311valene .
+
+imes:res312valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Produits d’exploitation : production immobilisée"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res312valene .
+
+imes:res313valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Produits d’exploitation : subventions d’exploitation"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res313valene .
+
+imes:res314valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Produits d’exploitation : reprises sur amortissements et provisions, transferts de charges"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res314valene .
+
+imes:res315valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Produits d’exploitation : autres produits"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res315valene .
+
+imes:res330valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Produits financiers de participations"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res330valene .
+
+imes:res331332ene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Produits des autres valeurs valeurs mobilières, autres intérêts et produits assimilés"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res331332ene .
+
+imes:res331valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Produits financiers des autres valeurs mobilières et créances de l'actif immobilisé"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res331valene .
+
+imes:res332valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Autres intérêts et produits assimilés"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res332valene .
+
+imes:res341valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Produits exceptionnels sur opérations en capital"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res341valene .
+
+imes:res401valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total ventes de marchandises"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res401valene .
+
+imes:res402valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total production vendue de biens"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res402valene .
+
+imes:res403valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total production vendue de services"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res403valene .
+
+imes:res410valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Total exportations et livraisons intracommunautaires"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res410valene .
+
+imes:res420valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Chiffres d'affaires nets en France"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res420valene .
+
+imes:res494valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Taxe intérieure sur les produits pétroliers"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res494valene .
+
+imes:res502valene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Cotisations personnelles de l’exploitant 2053"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:res502valene .
+
+imes:resd331vaene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Autres achats et charges externes : crédit-bail mobilier"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:resd331vaene .
+
+imes:resd332vaene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Autres achats et charges externes : crédit-bail immobilier"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:resd332vaene .
+
+imes:resprvvalene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Production vendue de biens et services"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:resprvvalene .
+
+imes:solbrovalene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Besoins en fonds de roulement"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:solbrovalene .
+
+imes:solcafvalene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Capacité d'autofinancement"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:solcafvalene .
+
+imes:solcinvalene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Consommations intermédiaires"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:solcinvalene .
+
+imes:solebevalene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Excédent brut d' exploitation"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:solebevalene .
+
+imes:solmarvalene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Marge commerciale"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:solmarvalene .
+
+imes:solpbcvalene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Produit brut courant avant impot (PBCAI)"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:solpbcvalene .
+
+imes:solprt001ene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Production totale"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:solprt001ene .
+
+imes:solrouvalene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Fonds de roulement"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:solrouvalene .
+
+imes:solvacfc2ene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Valeur ajoutée au coût des facteurs (VACF) - y compris autres produits et autres charges"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:solvacfc2ene .
+
+imes:solvahtc1ene
+		a                   qb:MeasureProperty ;
+		rdfs:label          "Valeur ajoutée hors taxe - hors autres produits et autres charges"@fr ;
+		rdfs:range          xsd:float ;
+		rdfs:subPropertyOf  sdmx-measure:obsValue ;
+		qb:concept          icon:solvahtc1ene .
+
+
+##########################################
+# Mappings between measures and concepts #
+#              (hand-made)               #
+##########################################
+
+imes:ragcapvalene qb:concept <http://id.insee.fr/concepts/definition/c1002> .
+imes:actentnomens qb:concept <http://id.insee.fr/concepts/definition/c1044> .
+imes:resd331vaene qb:concept <http://id.insee.fr/concepts/definition/c1195> .
+imes:resd332vaene qb:concept <http://id.insee.fr/concepts/definition/c1195> .
+imes:raginvtauenp qb:concept <http://id.insee.fr/concepts/definition/c1262> .
+imes:ragdettauenp qb:concept <http://id.insee.fr/concepts/definition/c1412> .
+imes:ragmartauenp qb:concept <http://id.insee.fr/concepts/definition/c1574> .
+imes:ragtvatauenp qb:concept <http://id.insee.fr/concepts/definition/c1605> .
+imes:actcatvalene qb:concept <http://id.insee.fr/concepts/definition/c1703> .
+imes:solcafvalene qb:concept <http://id.insee.fr/concepts/definition/c1723> .
+imes:solmarvalene qb:concept <http://id.insee.fr/concepts/definition/c1774> .

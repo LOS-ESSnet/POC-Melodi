@@ -1,0 +1,95 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix qb:    <http://purl.org/linked-data/cube#> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-measure: <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix idim: <http://id.insee.fr/meta/dimension/> .
+@prefix iatt: <http://id.insee.fr/meta/attribut/> .
+@prefix icon: <http://id.insee.fr/meta/concept/> .
+@prefix imes: <http://id.insee.fr/meta/mesure/> .
+
+###################################################################
+#               Data Structure Definition for Esane               #
+#                  (base part, without measures)                  #
+###################################################################
+
+<http://id.insee.fr/meta/dsd/esane/0.1>
+        a             qb:DataStructureDefinition ;
+        qb:component  [ a                       qb:ComponentSpecification ;
+                        qb:attribute            sdmx-attribute:unitMult ;
+                        qb:componentAttachment  qb:DataSet
+                      ] ;
+        qb:component  [ a                       qb:ComponentSpecification ;
+                        qb:attribute            iatt:idBank ;
+                        qb:componentAttachment  qb:DataSet
+                      ] ;
+        qb:component  [ a                       qb:ComponentSpecification ;
+                        qb:attribute            sdmx-attribute:decimals ;
+                        qb:componentAttachment  qb:DataSet
+                      ] ;
+        qb:component  [ a                       qb:ComponentSpecification ;
+                        qb:attribute            sdmx-attribute:unitMeasure;
+                        qb:componentAttachment  qb:Observation
+                      ] ;
+        qb:component  [ a                       qb:ComponentSpecification ;
+                        qb:attribute            sdmx-attribute:confStatus ;
+                        qb:componentAttachment  qb:Observation
+                      ] ;
+
+		qb:component  [ a                       qb:ComponentSpecification ;                     
+                        qb:attribute            sdmx-attribute:dataRev ;
+                        qb:componentAttachment  qb:Observation
+                      ] ;
+
+
+        qb:component  [ a                       qb:ComponentSpecification ;
+                        qb:dimension            sdmx-dimension:timePeriod
+					  ] ;
+
+        qb:component  [ a                       qb:ComponentSpecification ;
+                        qb:dimension            idim:nafRev2
+					  ] ;
+
+        qb:component  [ a                       qb:ComponentSpecification ;
+                        qb:dimension            idim:trancheEffectif
+					  ] ;
+
+        qb:component  [ a                       qb:ComponentSpecification ;
+                        qb:dimension            sdmx-dimension:freq
+					  ] .
+
+
+##############
+# Dimensions #
+##############
+
+# NAF rév.2
+idim:nafRev2 a              qb:CodedProperty , qb:DimensionProperty ;
+        rdfs:label          "Activity"@en , "Activité"@fr ;
+        rdfs:range          <http://id.insee.fr/codes/nafr2/PosteNAF> ;
+        rdfs:subPropertyOf  sdmx-dimension:activity ;
+        qb:concept          sdmx-concept:activity .
+
+# Tranches effectifs
+idim:trancheEffectif
+        a                   qb:CodedProperty , qb:DimensionProperty ;
+        rdfs:label          "Tranche d'effectif"@en , "Tranche d'effectif"@fr ;
+        rdfs:range          <http://id.insee.fr/codes/tranchesEffectifs/TrancheEffectif> ;
+        qb:concept          icon:TrancheEffectif .
+
+
+##############
+# Attributes #
+##############
+
+# Unit of measure (we use the SDMX-defined attribute, just add a French label)
+sdmx-attribute:unitMeasure rdfs:label  "Unité de mesure"@fr .
+
+# IdBank
+iatt:idBank  a  qb:Property , qb:AttributeProperty ;
+        rdfs:label   "Series identifier"@en , "Identifiant de la série"@fr ;
+        rdfs:range xsd:string .   
+
+

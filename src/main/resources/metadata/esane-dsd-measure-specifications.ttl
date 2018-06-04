@@ -1,0 +1,688 @@
+@prefix qb:    <http://purl.org/linked-data/cube#> .
+@prefix imes: <http://id.insee.fr/meta/mesure/> .
+
+###################################################################
+#               Data Structure Definition for Esane               #
+#                     (measure specifications)                    #
+###################################################################
+
+
+<http://id.insee.fr/meta/dsd/esane/0.1>
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:actcatvalene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:actentnomens ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:aim211valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:aim215valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:aim221valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:aimc120vaene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:aimc216vaene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:aimc217vaene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:aimc312vaene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:aimc315vaene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:aimf121vaene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:aimi115vaene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:aimi125vaene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:aimt119vaene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:aimt129vaene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac100valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac102valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac103valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac104valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac114valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac117valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac121valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac122valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac123valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac124valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac125valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac126valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac130valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac141valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac143valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac147valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac148valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac152valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac153valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac154valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac155valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac156valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac171valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac172valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac173valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac181valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac182valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac190valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac200valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac202valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac203valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac210valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac214217ene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac214valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac217valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac220valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac221valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac222valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac223valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac224valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac225valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac226valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac230valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac240valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac241valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac243valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac247valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac248valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac252valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac253valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac254valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac255valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac256valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac272valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac273valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac281valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac282valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac290valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac300valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac314315ene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac330valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac400valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac430valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bac604valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bacstomppene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bpa100valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bpa300valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bpa301valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bpa302valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bpa303valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bpa304valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bpa311valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bpa313valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bpa314valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bpa318valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bpa320valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bpa321valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bpa330valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bpa341valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bpa342valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bpa345valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:bpa350valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:depbaivalene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:dim231valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:dim241valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:dimc130vaene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:dimc140vaene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:dimf131vaene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:dimf141vaene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:dimi135vaene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:dimi145vaene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:dimt139vaene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:dimt149vaene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:empsalnomens ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:eseqtpnomens ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:imc100valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:imc110valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:imc150valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:imc201valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:imc251valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:imf101valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:imf111valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:imf151valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:imi105valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:imi155valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:imocorvalene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:imofinvalene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:imoincvalene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:imt109valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:imt159valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:invbaivalene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:invtotvalene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:ragauttauenp ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:ragcaevalene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:ragcapvalene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:ragcoutauenp ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:ragdeftauenp ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:ragdettauenp ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:ragevatauenp ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:ragimotauenp ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:raginttauenp ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:raginvtauenp ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:ragmartauenp ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:ragpacvalenj ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:ragpafvalenj ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:ragpretauenp ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:ragrentauenp ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:ragrsttauenp ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:ragtvatauenp ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:ragvaevalene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:recaidbrarde ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:recaidsecrde ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:recappbrardp ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:recappsecrdp ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:reccatbrarde ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:reccatsecrde ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:recdevbrardp ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:recdevsecrdp ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:recdpebrarde ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:recdpesecrde ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:recdpibrarde ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:recdpisecrde ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:recefrbrards ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:recefrsecrds ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:receftbrards ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:receftsecrds ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:recentbrards ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:recentsecrds ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:recfonbrardp ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:recfonsecrdp ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:recingbrards ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:recingsecrds ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res100valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res101valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res102valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res103valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res104valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res201valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res202valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res203valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res204valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res205valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res206valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res210valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res211valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res212valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res213valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res214valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res215valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res216217ene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res216valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res217valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res218valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res219valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res222valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res231valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res241valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res301valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res302valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res303valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res304valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res311valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res312valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res313valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res314valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res315valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res330valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res331332ene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res331valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res332valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res341valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res401valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res402valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res403valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res410valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res420valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res494valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:res502valene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:resd331vaene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:resd332vaene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:resprvvalene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:solbrovalene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:solcafvalene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:solcinvalene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:solebevalene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:solmarvalene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:solpbcvalene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:solprt001ene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:solrouvalene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:solvacfc2ene ];
+
+		qb:component  [ a                       qb:ComponentSpecification ;
+						qb:measure              imes:solvahtc1ene ].

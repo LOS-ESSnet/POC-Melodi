@@ -1,0 +1,38 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix icod-te: <http://id.insee.fr/codes/tranchesEffectifs/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+
+icod-te:TrancheEffectif a  rdfs:Class , owl:Class ;
+        rdfs:seeAlso       icod-te:cs ;
+        rdfs:subClassOf    skos:Concept ;
+        skos:prefLabel     "Employment size"@en , "Tranche d'effectif"@fr .
+
+icod-te:0  a               icod-te:TrancheEffectif , skos:Concept ;
+        skos:inScheme      icod-te:cs ;
+        skos:notation      "009" ;
+        skos:prefLabel     "0 to 9 employees"@en , "0 à 9 salariés"@fr ;
+        skos:topConceptOf  icod-te:cs .
+
+icod-te:1  a               icod-te:TrancheEffectif , skos:Concept ;
+        skos:inScheme      icod-te:cs ;
+        skos:notation      "119" ;
+        skos:prefLabel     "10 to 19 employees"@en , "10 à 19 salariés"@fr ;
+        skos:topConceptOf  icod-te:cs .
+
+icod-te:2  a               icod-te:TrancheEffectif , skos:Concept ;
+        skos:inScheme      icod-te:cs ;
+        skos:notation      "224" ;
+        skos:prefLabel     "20 to 249 employees"@en , "20 à 249 salariés"@fr ;
+        skos:topConceptOf  icod-te:cs .
+
+icod-te:3  a               icod-te:TrancheEffectif , skos:Concept ;
+        skos:inScheme      icod-te:cs ;
+        skos:notation      "250" ;
+        skos:prefLabel     "250 employees and more"@en , "250 salariés et plus"@fr ;
+        skos:topConceptOf  icod-te:cs .
+
+icod-te:cs  a              skos:ConceptScheme ;
+        rdfs:seeAlso       icod-te:TrancheEffectif ;
+        skos:hasTopConcept icod-te:2 , icod-te:1 , icod-te:0 , icod-te:3 ;
+        skos:prefLabel     "Employment sizes"@en , "Tranches d'effectif"@fr .
