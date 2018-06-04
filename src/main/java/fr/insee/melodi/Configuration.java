@@ -1,5 +1,9 @@
 package fr.insee.melodi;
 
+import java.util.Arrays;
+import java.util.Set;
+import java.util.TreeSet;
+
 /**
  * Class containing the configuration parameters for the creation of RDF data corresponding to the Esane dataset.
  * 
@@ -12,22 +16,7 @@ public class Configuration {
 	// File names //
 	////////////////
 
-	/** Turtle file containing the Data Structure Definition */
-	public static final String POP5_DSD_FILE = "src/main/resources/turtle/esane-dsd.ttl";
-
-	public static final String ESANE_DATA_FILE = "src/main/resources/csv/esane-2013.txt";
-
-	/** Text files corresponding to the different SKOS concept schemes to build */
-	public static final String[] CS_FILES = {"src/main/resources/text/cs-sexe.txt", "src/main/resources/text/cs-ageq65.txt", "src/main/resources/text/cs-tactr.txt"};
-
-
-	////////////////////////
-	// Various parameters //
-	////////////////////////
-
-	/** Instances of qb:Observation are identified by the combination of the code values, separate by this */
-	public static final String OBS_ID_SEPARATOR = "-";
-
+	public static final String ESANE_DATA_FILE = "src/main/resources/data/esane-2013.txt";
 
 	///////////////////////
 	// URI and namepaces //
@@ -57,5 +46,12 @@ public class Configuration {
 			case 1: return baseURI + "section/" + itemCode;
 			default: return null;
 		}
+	}
+
+	public static final Set<String> validEmploymentRangeCodes = new TreeSet<String>(Arrays.asList("009","119", "224", "250"));
+	public static String employmentRangeURI(String rangeCode) {
+
+		if (!validEmploymentRangeCodes.contains(rangeCode)) return null;
+		return "http://id.insee.fr/codes/tranchesEffectifs/" + rangeCode;
 	}
 }

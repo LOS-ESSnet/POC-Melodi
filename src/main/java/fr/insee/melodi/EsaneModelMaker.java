@@ -73,7 +73,7 @@ public class EsaneModelMaker {
 	public static void main(String... args) {
 		makeDataSetModel();
 		try {
-			RDFDataMgr.write(new FileOutputStream("src/main/resources/turtle/esane-dataset.ttl"), esaneModel, Lang.TURTLE);
+			RDFDataMgr.write(new FileOutputStream("src/main/resources/data/esane-dataset.ttl"), esaneModel, Lang.TURTLE);
 		} catch (FileNotFoundException e) {
 			logger.error("Error writing Turtle file - " + e.getMessage());
 		}
@@ -127,6 +127,12 @@ public class EsaneModelMaker {
 				String nafCodeNoPoint = record.get("NAF");
 				String nafItemURI = Configuration.nafr2ItemURI(nafCodeNoPoint);
 				observationResource.addProperty(inseeDimensions.get("nafRev2"), esaneModel.createResource(nafItemURI));
+				// Add the range code corresponding to the employment size dimension
+				String rangeCodeURI = Configuration.employmentRangeURI(record.get("tr_effectif")); // tr_effectif should not be empty since we ignore the records in that case
+				if (rangeCodeURI == null) logger.error("Invalid employment range code: " + record.get("tr_effectif") + " for record " + recordId);
+				else {
+					observationResource.addProperty(inseeDimensions.get("trancheEffectif"), esaneModel.createResource(rangeCodeURI));
+				}
 				// Add confidentiality status as an attribute
 				String codeValue = record.get("code_valeur");
 				if (confidentialityStatusMappings.containsKey(codeValue)) {
@@ -162,11 +168,11 @@ public class EsaneModelMaker {
 		// The DSD is split between different files: one for the base DSD and two for the measures
 		OntModel esaneDSDModel = ModelFactory.createOntologyModel();
 		logger.info("Reading the Esane DSD (without measures)");
-		esaneDSDModel.read("src/main/resources/turtle/esane-dsd-base.ttl");
+		esaneDSDModel.read("src/main/resources/metadata/esane-dsd-base.ttl");
 		logger.info("Reading the Esane DSD measure definitions");
-		esaneDSDModel.read("src/main/resources/turtle/esane-dsd-measure-definitions.ttl");
+		esaneDSDModel.read("src/main/resources/metadata/esane-dsd-measure-definitions.ttl");
 		logger.info("Reading the Esane DSD measure specifications");
-		esaneDSDModel.read("src/main/resources/turtle/esane-dsd-measure-specifications.ttl");
+		esaneDSDModel.read("src/main/resources/metadata/esane-dsd-measure-specifications.ttl");
 
 		// TODO Replace default concept in measures when a hand-chosen concept is indicated
 		return esaneDSDModel;
@@ -176,6 +182,8 @@ public class EsaneModelMaker {
 
 		// For now we ignore records that refer to NAF rév.2 groupings (prof_naf = "NO")
 		if ("N0".equals(record.get("prof_naf"))) return false;
+		// If the employment size range is missing, we ignore the record
+		if (record.get("tr_effectif").length() == 0) return false;
 		// If the value is missing (valeur = "") we ignore the record
 		if (record.get("valeur").length() == 0) return false;
 
